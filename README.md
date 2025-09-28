@@ -6,7 +6,7 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 
-api-endpoints
+api-endpoints-port 80
 /upload
     file
     mode
@@ -15,6 +15,8 @@ api-endpoints
 
 /status/{job_id}
 /result/{job_id}
+
+refer postman collection
 
 for the script 
 
