@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "3b6f6004-d861-4fad-9667-4692ce89ba66",
+		"name": "data_analyze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22790330"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "tBUM_J-Z_/temp_logs.txt"
+						},
+						{
+							"key": "mode",
+							"value": "multi",
+							"type": "text"
+						},
+						{
+							"key": "workers",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "top_n",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://b492817ba18a.ngrok-free.app/upload",
+					"protocol": "https",
+					"host": [
+						"b492817ba18a",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://b492817ba18a.ngrok-free.app/status/99609e37-aebe-43e1-957d-d69896102d31",
+					"protocol": "https",
+					"host": [
+						"b492817ba18a",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"status",
+						"99609e37-aebe-43e1-957d-d69896102d31"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
