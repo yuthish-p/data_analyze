@@ -43,7 +43,7 @@ venv.bak/
 *.db
 
 # Config files (optional)
-config.py
+
 *.env
 
 # Mac / Linux / Windows system files
